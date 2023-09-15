@@ -1,0 +1,45 @@
+:root {
+
+}
+html, body {
+    margin: 0px;
+    padding: 0px;
+} 
+body {
+    display: flex;
+    flex: 1;
+
+}
+.img-container {
+    display: flex;
+    flex: 1;
+    justify-content: space-around;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    background-image: url("img/main_img.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: contain;  
+}
+.logo-container {
+    background-color: rgba(112,128,144, 0.7);
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 50px;
+}
+.logo {
+    width: 4rem;
+    height: 4rem;
+    
+}
+.logo-name {
+    color: white;
+    font-size: 2rem;
+}
+.text-container {
+    width: 50vw;
+    height: 50vh;
+}
