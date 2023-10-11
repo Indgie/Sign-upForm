@@ -1,4 +1,7 @@
 :root {
+    --main-text-color: #135b5c;
+    --main-fill-color: #ffae42;
+    --field-outline: #0a3031;
 
 }
 html, body {
@@ -13,8 +16,19 @@ body {
 
 
 }
-p {
-    padding-left: 20px;;
+h1 {
+    color: black;
+}
+
+.intro {
+    margin-bottom: 0;
+    padding-left: 20px;
+}
+p:nth-child(1) {
+    margin-bottom: 0;
+}
+p:nth-child(2) {
+    margin-top: 0;
 }
 .img-container {
     background-image: url("img/pines.jpg");
@@ -60,10 +74,10 @@ form {
 }
 button {
     cursor: pointer;
-    background-color:  #ffae42;
+    background-color:  var(--main-fill-color);
     width: 200px;
     height: 30px;
-    border: 2px solid #ffae42;
+    border: 2px solid var(--main-fill-color);
     border-radius: 10px;
     color: white;
 }
@@ -80,9 +94,26 @@ input {
   }
   
   input:valid {
-    border-color: #135b5c;
+    border-color: var(--field-outline);
   }
 
   .alert{
     padding-left: 20px;
   }
+
+  .text-container {
+    color: var(--main-text-color);
+  }
+
+  a {
+    color: var(--field-outline);
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: var(--main-fill-color);
+    font-weight: bold;
+    text-decoration: none;
+  }
+
