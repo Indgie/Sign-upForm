@@ -2,6 +2,8 @@
     --main-text-color: #135b5c;
     --main-fill-color: #ffae42;
     --field-outline: #0a3031;
+    --left-side-width: 40vw;
+    --right-side-width: 60vw;
 
 }
 html, body {
@@ -21,8 +23,11 @@ h1 {
 }
 
 .intro {
-    margin-bottom: 0;
+    margin-top: 50px;
     padding-left: 20px;
+    width: calc(var(--right-side-width) * calc(2/3));
+    font: 20px bolder;
+    
 }
 p:nth-child(1) {
     margin-bottom: 0;
@@ -34,10 +39,7 @@ p:nth-child(2) {
     background-image: url("img/pines.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    width: 40vw;
-
-    
-
+    width: var(--left-side-width);
 }
 
 .header {
@@ -47,6 +49,7 @@ form {
     display: flex;
     flex-direction: column;
     background-color: #e6edec;
+
 }
 .form-details {
     display: flex;
@@ -89,31 +92,37 @@ input {
     
   }
   
-  input:invalid {
-    border-color: red;
-  }
-  
-  input:valid {
-    border-color: var(--field-outline);
-  }
+input:invalid {
+border-color: red;
+}
 
-  .alert{
-    padding-left: 20px;
-  }
+input:valid {
+border-color: var(--field-outline);
+}
 
-  .text-container {
-    color: var(--main-text-color);
-  }
+.alert{
+padding-left: 20px;
+}
 
-  a {
-    color: var(--field-outline);
-    font-weight: bold;
-    text-decoration: none;
-  }
+.text-container {
+color: var(--main-text-color);
+width: var(--right-side-width);
 
-  a:hover {
-    color: var(--main-fill-color);
-    font-weight: bold;
-    text-decoration: none;
-  }
+}
+
+a {
+color: var(--field-outline);
+font-weight: bold;
+text-decoration: none;
+}
+
+a:hover {
+color: var(--main-fill-color);
+font-weight: bold;
+text-decoration: none;
+}
+
+.login {
+    margin-left: 20px;
+}
 
