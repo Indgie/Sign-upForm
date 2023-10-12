@@ -6,3 +6,4 @@ Several new skill were applied while creating this website:
  -css pseudo classes;
  -css size properties;
  -form validation basics (user side);
+ -external fonts;
