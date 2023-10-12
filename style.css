@@ -12,12 +12,10 @@ html, body {
 } 
 body {
     display: flex;
-
     width: 100vw;
     height: 100vh;
-
-
 }
+
 h1 {
     color: black;
 }
@@ -25,7 +23,7 @@ h1 {
 .intro {
     margin-top: 50px;
     padding-left: 20px;
-    width: calc(var(--right-side-width) * calc(2/3));
+    width: calc(var(--right-side-width) * calc(3/4));
     font: 20px bolder;
     
 }
@@ -36,10 +34,33 @@ p:nth-child(2) {
     margin-top: 0;
 }
 .img-container {
+
     background-image: url("img/pines.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     width: var(--left-side-width);
+}
+.img-items {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+.logo {
+    width: 200px;
+    height: auto;
+    margin-top: 50px;   
+}
+.brand-name {
+    display: flex;
+    font-size: 30px;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(19, 91, 92, 0.7);
+    width: var(--left-side-width);
+    height: 70px;
 }
 
 .header {
